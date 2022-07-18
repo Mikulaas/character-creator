@@ -3,6 +3,10 @@
   padding-bottom: 64px;
 }
 
+.maxWidthWrapper {
+  position: relative;
+}
+
 header {
   padding-bottom: 64px;
   width: 65%;
@@ -23,17 +27,25 @@ header {
 
 .characterWrapper {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  height: 40%;
-  width: 100%;
-  background-color: hsl(195deg, 20%, 86%);
+  top: 15%;
+  left: 60%;
+  bottom: 5%;
+  min-height: 500px;
 }
 
 .controlColumn {
   position: relative;
   width: 50%;
-  z-index: 10;
+}
+
+.perspectiveBox {
+  position: fixed;
+  top: 60%;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  height: 40%;
+  background-color: hsl(195deg, 20%, 86%);
 }
 
 @media screen and (max-width: 769px) {

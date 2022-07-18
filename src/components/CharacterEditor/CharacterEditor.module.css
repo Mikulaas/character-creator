@@ -3,11 +3,9 @@
   padding-bottom: 64px;
 }
 
-.maxWidthWrapper {
-}
-
-.header {
+header {
   padding-bottom: 64px;
+  width: 65%;
 }
 
 .title {
@@ -24,7 +22,23 @@
 }
 
 .characterWrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 40%;
+  width: 100%;
+  background-color: hsl(195deg, 20%, 86%);
 }
 
 .controlColumn {
+  position: relative;
+  width: 50%;
+  z-index: 10;
+}
+
+@media screen and (max-width: 769px) {
+  .controlColumn {
+    display: flex;
+    width: max-content;
+  }
 }
